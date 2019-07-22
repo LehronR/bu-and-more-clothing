@@ -52,11 +52,13 @@ class SignIn extends Component {
             label="password"
             required
           />
-          <CustomButton type="submit">Sign In </CustomButton>
-          <CustomButton onClick={signInWithGoogle} >
-            {' '}
-            Sign in with Goole{' '}
-          </CustomButton>
+          <div className='buttons'>
+            <CustomButton type="submit">Sign In </CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn >
+              {' '}
+              Sign in with Goole{' '}
+            </CustomButton>
+          </div>
         </form>
       </div>
     )
