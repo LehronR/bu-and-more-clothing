@@ -7,7 +7,6 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import { connect } from 'react-redux';
 
 import './header.styles.scss';
-import userReducer from '../../redux/user/user.reducer';
 
 const Header = ({ currentUser }) => (
   <div className='header'>
